@@ -1,78 +1,52 @@
 <!doctype html>
 <html lang="en-AU">
   <head>
-    
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRJK517KH5"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-WRJK517KH5');
-  </script>
-<meta charset="utf-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRJK517KH5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WRJK517KH5');
+    </script>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="FixFox Home Repairs — Canberra's reliable home repair service. Website coming soon.">
     <meta name="theme-color" content="#102b3a">
     <link rel="canonical" href="https://myfixfox.com.au/">
     <title>FixFox Home Repairs | Canberra</title>
     <style>
-      :root {
-        --ink: #102b3a;
-        --accent: #e66028;
-        --paper: #f7f7f4;
-      }
-
-      * { box-sizing: border-box; }
-
+      :root { --ink:#102b3a; --accent:#e66028; --paper:#f7f7f4; }
+      * { box-sizing:border-box; }
       body {
-        display: grid;
-        min-height: 100dvh;
-        margin: 0;
-        padding: 24px;
-        place-items: center;
-        background: var(--paper);
-        color: var(--ink);
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
+        display:grid; min-height:100dvh; margin:0; padding:24px; place-items:center;
+        background:var(--paper); color:var(--ink); font-family:Arial,Helvetica,sans-serif; text-align:center;
       }
-
-      main { max-width: 38rem; }
-
-      img {
-        display: block;
-        width: min(100%, 300px);
-        height: auto;
-        margin: 0 auto 3rem;
+      main { max-width:38rem; }
+      .brand { margin:0 auto 3rem; }
+      .logo-circle {
+        display:grid; place-items:center; width:min(62vw,240px); aspect-ratio:1;
+        margin:0 auto 1rem; overflow:hidden; border-radius:50%; background:#fff;
+        box-shadow:0 8px 30px rgba(16,43,58,.10);
       }
-
-      h1 {
-        margin: 0;
-        font-size: clamp(2rem, 7vw, 3.5rem);
-        letter-spacing: -0.045em;
-        line-height: 1.05;
+      .logo-circle img { display:block; width:88%; height:88%; object-fit:contain; }
+      .brand-name {
+        margin:0; color:var(--ink); font-size:clamp(1.35rem,4.5vw,2rem);
+        font-weight:700; letter-spacing:-.025em;
       }
-
-      p {
-        max-width: 32rem;
-        margin: 1.25rem auto 0;
-        color: #385361;
-        font-size: clamp(1rem, 2.6vw, 1.2rem);
-        line-height: 1.6;
-      }
-
-      .line {
-        width: 48px;
-        height: 4px;
-        margin: 2rem auto 0;
-        border-radius: 99px;
-        background: var(--accent);
-      }
+      h1 { margin:0; font-size:clamp(2rem,7vw,3.5rem); letter-spacing:-.045em; line-height:1.05; }
+      p { max-width:32rem; margin:1.25rem auto 0; color:#385361; font-size:clamp(1rem,2.6vw,1.2rem); line-height:1.6; }
+      .line { width:48px; height:4px; margin:2rem auto 0; border-radius:99px; background:var(--accent); }
     </style>
   </head>
   <body>
     <main>
-      <img src="assets/fixfox-logo-mockup-style.svg" alt="FixFox Home Repairs">
+      <div class="brand">
+        <div class="logo-circle">
+          <img src="assets/fixfox-fox-mark.png" alt="FixFox fox logo">
+        </div>
+        <div class="brand-name">Fix Fox Home Repairs</div>
+      </div>
       <h1>We’re building something helpful.</h1>
       <p>FixFox Home Repairs is getting ready to make home maintenance in Canberra simpler. Our new website is coming soon.</p>
       <div class="line" aria-hidden="true"></div>
